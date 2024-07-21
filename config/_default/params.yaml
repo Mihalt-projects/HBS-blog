@@ -8,42 +8,37 @@ hb:
   # js_bundle_name: main # the JS bundle name.
   # css_bundle_name: main # the CSS bundle name.
   
-  full_width: false # when true, the layout takes full width globally.
+  full_width: true # when true, the layout takes full width globally.
 
   header:
-    brand: HB # the brand name, leave it empty to use site's title.
-    logo_bg: '#712cf9' # logo background color, used by logo with transparent background.
+    brand: Mihalt-projects # the brand name, leave it empty to use site's title.
+    #logo_bg: '#712cf9' # logo background color, used by logo with transparent background.
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      github: hbstack
-      # twitter: razonyang
-      rss: true
-      mastodon: https://techhub.social/@hbstack
+      github: mihalt-projects
+      linkedin : evan-staub-bb7570213
   footer:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      _color: true # when false, remove the color of social icons.
-      github: hbstack
-      twitter: razonyang
-      rss: true
-      mastodon: https://techhub.social/@hbstack
+      _color: false # when false, remove the color of social icons.
+      github: mihalt-projects
+      linkedin : evan-staub-bb7570213
   terms:
     # the paginate for categories, tags, series list pages.
     paginate: 12
   blog:
     sidebar:
       profile:
-        # title: Profile title other than site title.
-        # description: Profile description other than site description.
-        company: COMPANY
-        location: Earth
+        title: Mihalt-projects # the profile title.
+        description: System administration, open resources and more
+        company: Haventure / EPSI
+        location: Grenoble
         socials:
-          github: hbstack
-          mastodon: https://techhub.social/@hbstack
-          rss: true
+          github: Mihalt-projects
+          linkedin : evan-staub-bb7570213
       posts:
-        recent_count: 5 # the number of recent posts.
-        featured_count: 5 # the number of featured posts.
+        recent_count: 3 # the number of recent posts.
+        featured_count: 3 # the number of featured posts.
       taxonomies:
         count: true # whether to show the number of posts associated to the item.
         limit: 10 # the maximum number of the item.
@@ -52,21 +47,12 @@ hb:
     # post_thumbnail: false # whether to show the thumbnails.
     # post_date_format: ":date_long" # see https://gohugo.io/functions/dateformat/#datetime-formatting-layouts.
     home: # homepage settings.
-      # taxonomies: false # remove the taxonomies stat from the homepage.
-      featured_posts: 5 # the number of the featured posts.
+      taxonomies: false # remove the taxonomies stat from the homepage.
+      featured_posts: 3 # the number of the featured posts.
       main_sections: # leave it empty to include all regular pages.
         - docs
         - blog
         - tutorials
-    giscus:
-      repo: hbstack/theme
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
-  docs:
-    giscus:
-      repo: hbstack/theme
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
   content_panel:
     repo:
       service: github # github or gitlab.

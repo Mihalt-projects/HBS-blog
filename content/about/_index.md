@@ -1,10 +1,11 @@
 ---
-title: Gallery
+title: About me
 menu:
   main:
-    weight: 2
+    params:
+    weight: 1
     params:
       icon:
         vendor: fas
-        name: images
+        name: blog
 ---

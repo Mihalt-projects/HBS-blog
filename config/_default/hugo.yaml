@@ -26,7 +26,6 @@ outputs:
 taxonomies:
   authors: authors       # multiple authors.
   tags: tags
-  categories: categories
   series: series
 
 build:

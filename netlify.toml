@@ -1,10 +1,10 @@
 [build]
-command = "npm ci && hugo --minify --gc -b $URL"
+command = "npm ci && hugo --minify --gc -b $URL" # change to suite your needs.
 publish = "public"
 
 [build.environment]
 NODE_VERSION = "19"
-HUGO_VERSION = "0.121.2"
+HUGO_VERSION = "0.111.3"
 HUGO_ENABLEGITINFO = "true"
 HUGO_ENV = "production"
 GO_VERSION = "1.20"
@@ -17,7 +17,6 @@ GO_VERSION = "1.20"
     X-Frame-Options = "deny"
     X-XSS-Protection = "1; mode=block"
 
-# multilingual 404 pages, remove it on monolingual sites.
 [[redirects]]
   from = "/en/*"
   to = "/en/404.html"
@@ -31,6 +30,6 @@ GO_VERSION = "1.20"
 # fallback 404 page.
 [[redirects]]
   from = "/*"
-  to = "/404.html"
-  # to = "/en/404.html" # use this instead if defaultContentLanguageInSubdir is enabled.
+  # to = "/404.html"
+  to = "/en/404.html" # use this instead if defaultContentLanguageInSubdir is enabled.
   status = 404
